@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java AWS S3 Storage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <style>
+        .body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body style=" background-color: lightgrey;">
+    <div class="container ">
+        <nav class="navbar" style="text-align: center; color:grey:display:block">
+            <div class="container inverse">
+                <div class="navbar-header" style="text-align: center;">
+                    <h3 class=" col-md-8 " style="text-align:center; ">Java AWS S3 Storage</h3>
+                    <input type="button" class="btn btn-primary col-md-4 " value="Logout" id="logoutbtn" />
+                </div>
+            </div>
+        </nav>
+        <div class=" row ">
+            <div class="col-md-8 ">
+                <h3>S3 Objects List :</h3>
+            </div>
+        </div>
+        <div id="contdetail"> </div>
+        <div class="row ">
+            <h3>Upload S3 Object : </h3>
+        </div>
+        <div class="row">
+            <h3>File Upload:</h3>
+            Select a file to upload: <br />
+            <form method="post" enctype="multipart/form-data" id="upload-form">
+                <input type="file" name="file" size="50" id="myfileinput" multiple />
+                <br />
+                <input type="submit" value="Upload File" />
+            </form>
+        </div>
+        <div class="row ">
+            <h3>Delete S3 Object : </h3>
+        </div>
+        <div class="row ">
+            <form class="form-horizontal ">
+                <div class="form-group ">
+                    <label class="control-label col-md-3 " for="delcontname">Enter Object Key to delete :</label>
+                    <div class="col-md-2 ">
+                        <input type="text " class="form-control " id="delcontname" name="filename" />
+                    </div>
+                    <input type="button" class="btn btn-primary col-md-2 " value="Delete" id="delcontdetbtn" />
+                </div>
+            </form>
+        </div>
+        <div class="row ">
+            <h3>Download S3 Object : </h3>
+        </div>
+        <div class="row ">
+            <form class="form-horizontal ">
+                <div class="form-group ">
+                    <label class="control-label col-md-3 " for="downname">Enter Object Name :</label>
+                    <div class="col-md-2 ">
+                        <input type="text " class="form-control " id="downname" name="downname" />
+                    </div>
+                    <input type="button" class="btn btn-primary col-md-2 " value="Download" id="downloadbtn" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Call SimpleServlet on page load  -->
+    <script src="../js/jquery-3.1.1.min.js">
+    </script>
+    <script src="../js/bootstrap.min.js">
+    </script>
+    <script src="../js/homePage.js"></script>
+</body>
+
+</html>

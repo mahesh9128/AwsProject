@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java AWS S3 Storage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+        .body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body style=" background-color: lightgrey;">
+    <div class="container ">
+        <nav class="navbar" style="text-align: center; color:grey:display:block">
+            <div class="container inverse">
+                <div class="navbar-header" style="text-align: center;">
+                    <h3 class=" col-md-12 " style="text-align:center; ">Java AWS S3 Storage</h3>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row ">
+            <h3>Registeration Details : </h3>
+        </div>
+        <div class="row ">
+            <form class="form-horizontal ">
+                <div class="form-group ">
+                    <label class="control-label col-md-2 " for="usernamereg">User Name:</label>
+                    <div class="col-md-2 ">
+                        <input type="text " class="form-control " id="usernamereg" name="usernamereg" />
+                    </div>
+                    <label class="control-label col-md-2 " for="pwdreg">Password :</label>
+                    <div class="col-md-2 ">
+                        <input type="text " class="form-control " id="pwdreg" name="pwdreg" />
+                    </div>
+                    <input type="button" class="btn btn-primary col-md-2 " value="Submit" id="regbtn" />
+                </div>
+            </form>
+        </div>
+        <div class="row ">
+            <h3>Login Details : </h3>
+        </div>
+        <div class="row ">
+            <form class="form-horizontal ">
+                <div class="form-group ">
+                    <label class="control-label col-md-2 " for="username">User Name:</label>
+                    <div class="col-md-2 ">
+                        <input type="text " class="form-control " id="username" name="username" />
+                    </div>
+                    <label class="control-label col-md-2 " for="pwd">Password :</label>
+                    <div class="col-md-2 ">
+                        <input type="text " class="form-control " id="pwd" name="pwd" />
+                    </div>
+                    <input type="button" class="btn btn-primary col-md-2 " value="Submit" id="loginbtn" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- Call SimpleServlet on page load  -->
+    <script src="./js/jquery-3.1.1.min.js">
+    </script>
+    <script src="./js/bootstrap.min.js">
+    </script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
